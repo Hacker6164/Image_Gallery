@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar-top">
+        <!-- Content for the top navigation bar goes here -->
+        <button class="navbar-toggle-button" onclick="toggleLeftNavbar()">OP</button>
+        <div class="topNavLeft"><h2>Welcome to Image Gallery</h2></div>
+        <div class="topNavRight">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="navbar-left" id="leftNavbar">
+            <!-- Content for the left navigation bar goes here -->
+            <ul>
+                <li><a href="#" onclick="showImages('all')">All photos</a></li>
+                <li><a href="#" onclick="showImages('ss')">Screenshots</a></li>
+                <li><a href="#" onclick="showImages('wU')">WhatsUp-images</a></li>
+                <li><a href="#" onclick="showImages('fav')">Favorites</a></li>
+            </ul>
+        </div>
+        <div class="content-space">
+
+            <h3>Default placeholder text for content.</h3>
+        </div>
+        <div class="image-gallery" id="imageGallery">
+
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        showContent('all');
+        showImages('all');
+    </script>
+</body>
+
+</html>

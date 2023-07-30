@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.navbar-top {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightslategray;
+    /* Add other styles for the top navigation bar */
+}
+.navbar-toggle-button {
+    /* Add styles for the toggle button */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+.navbar-top ul{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-top ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.main-container {
+    height: 1000px;
+    display: flex;
+    background-color: Black;
+}
+
+.navbar-left {
+    position: fixed;
+    top: 50px;
+    /* Adjust the value to align it with the top navigation bar */
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    /* Adjust the width as needed */
+    background-color: #e0e0e0;
+    /* Add other styles for the left navigation bar */
+    /* padding: 0px 0px; */
+}
+.navbar-left ul{
+    padding: 0px 0px;
+}
+
+.navbar-left ul li {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+}
+
+.navbar-left ul li a:hover {
+    color: lightsalmon;
+}
+
+.content-space {
+    /* Add styles for the content space */
+    position: absolute;
+    top: 45px;
+    left: 160px;
+    /* right: 160px; */
+    background-color: transparent;
+    /* padding: 10px; */
+    font-size: 18px;
+    color: #fff;
+}
+.hidden {
+    display: none;
+  }
+
+.image-gallery {
+    margin-left: 175px;
+    margin-top: 85px;
+    /* To avoid overlapping with the left navigation bar */
+    display: grid;
+    grid-template-columns: repeat(7, 180px);
+    /* flex-wrap: wrap; */
+    grid-auto-rows: 180px;
+    gap: 10px;
+    /* Adjust the gap between images as needed */
+    background-color: yellow;
+}
+
+.image-gallery img {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    /* margin: 20px 20px 0px 20px; */
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.2);
+}
